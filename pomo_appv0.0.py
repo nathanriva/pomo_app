@@ -1,7 +1,8 @@
-### Esta va a ser la app mas basica, sin GUI, simplemente codigo, para aprender bien la logica de un reloj y su programacion##
+#@! Esta va a ser la app mas basica, sin GUI, simplemente codigo, para aprender bien la logica de un reloj y su programacion !@#
+
+#____Importamos los modulos para la aplicacion____#
 import time
 import os
-#def pomodoro(study, rest):
 
 #____Con esta funcion convertimos los minutos ingresados por el usuario en segundos. (1/60)____#
 def pasar_a_minutos(num):
@@ -29,9 +30,11 @@ def countdown(t):
         os.system("cls")
     print("SE TERMINO EL TIEMPOOO")
 
+#___Definimos las dos variables para la funcion principal (no me gusta q esten afuera pero bueno)___#
 study = int(input("Cuantos minutos queres estudiar?:"))
 rest = int(input("Cuantos minutos  queres descansar?:"))
 
+#____FUNCION PRINCIPAL____#
 def POMODORO(study, rest):
     t = pasar_a_minutos(study)
     r = pasar_a_minutos(rest)
@@ -40,4 +43,5 @@ def POMODORO(study, rest):
     print("TERMINASTE DE ESTUDIAR")
     os.system("clear||cls")
 
+#___Llamamos a la funcion___#
 POMODORO(study, rest)
