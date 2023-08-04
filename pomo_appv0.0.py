@@ -7,13 +7,7 @@ import os
 #____Con esta funcion convertimos los minutos ingresados por el usuario en segundos. (1/60)____#
 def pasar_a_minutos(num):
     return num * 60
-
-#def separar_en_minutos(mins=120):
-    while 1==1:
-        if mins > 60:
-            mins // 60
-        print(mins)
-
+    
 #____Con esta funcion restamos el tiempo ingresado hasta llegar a 0. (1/60)____#
 def countdown(t):
     while t > 0:
